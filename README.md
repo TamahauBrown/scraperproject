@@ -4,7 +4,7 @@ Terence Qu - Rust developer and architecture
 
 Graham Mackintosh - Data Scientist
 
-Rex Pan - Rust lead
+Rex Pan - Rust developer
 
 Rose Pineau - Python developer
 
