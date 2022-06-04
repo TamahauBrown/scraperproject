@@ -1,7 +1,11 @@
 Tamahau Brown (https://github.com/TamahauBrown)
+
 Terence Qu
+
 Graham Mackintosh
+
 Rex Pan
+
 Rose Pineau
 
 # PROJECT SCRAPER
