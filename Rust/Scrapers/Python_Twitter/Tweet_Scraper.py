@@ -16,7 +16,7 @@ import unicodedata
 #To add wait time between requests
 import time
 
-os.environ['TOKEN'] = '<ADD_BEARER_TOKEN>'
+os.environ['TOKEN'] = ''
 
 def auth():
     return os.getenv('TOKEN')
@@ -49,14 +49,14 @@ def connect_to_endpoint(url, headers, params, next_token = None):
         raise Exception(response.status_code, response.text)
     return response.json()
 
-with open('data.json', 'w') as f:
-    json.dump(json_response, f)
-
 if __name__ == '__main__':
-    # Create file
-    csvFile = open("data.csv", "a", newline="", encoding='utf-8')
-    csvWriter = csv.writer(csvFile)
-
-    #Create headers for the data you want to save, in this example, we only want save these columns in our dataset
-    csvWriter.writerow(['author id', 'created_at', 'geo', 'id','lang', 'like_count', 'quote_count', 'reply_count','retweet_count','source','tweet'])
-    csvFile.close()
+    #Inputs for the request
+    bearer_token = auth()
+    headers = create_headers(bearer_token)
+    keyword = "xbox lang:en"
+    start_time = "2021-03-01T00:00:00.000Z"
+    end_time = "2021-03-31T00:00:00.000Z"
+    max_results = 15
+    url = create_url(keyword, start_time,end_time, max_results)
+    json_response = connect_to_endpoint(url[0], headers, url[1])
+    print(headers)
