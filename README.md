@@ -1,12 +1,12 @@
-Tamahau Brown (https://github.com/TamahauBrown)
+Tamahau Brown (https://github.com/TamahauBrown) - Tech lead
 
-Terence Qu
+Terence Qu - Rust developer and architecture
 
-Graham Mackintosh
+Graham Mackintosh - Data Scientist
 
-Rex Pan
+Rex Pan - Rust lead
 
-Rose Pineau
+Rose Pineau - Python developer
 
 # PROJECT SCRAPER
 
