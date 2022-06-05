@@ -33,7 +33,7 @@ def Top_Posts(subreddit):
               "ID": [], "Score": [],
               "Total Comments": [], "Post URL": []
               }
- 
+    
     for post in posts:
         # Title of each post
         posts_dict["Title"].append(post.title)
@@ -57,7 +57,7 @@ def Top_Posts(subreddit):
         top_posts = pd.DataFrame(posts_dict)
         #top_posts
         
-        top_posts.to_csv("Top Posts.csv", index=True)
+        top_posts.to_csv("TopPosts.csv", index=True)
         
 def Post_Scraper(reddit_read_only):
     # URL of the post
