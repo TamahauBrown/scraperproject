@@ -1,0 +1,50 @@
+--help
+
+WTF is launch.json
+    example w/ JS - https://charlesagile.com/vscode-launch-json-and-the-debug-console
+    example w/ python 
+        - https://code.visualstudio.com/docs/python/debugging
+        - https://www.youtube.com/watch?v=KEdq7gC_RTA 
+
+PYTHON
+    Libraries
+        - https://www.geeksforgeeks.org/libraries-in-python/ 
+            - "modules" == "functions"(?)
+        - Pandas: 
+            - commonly used in data science
+            - machine learning
+            - data structures
+    CS50 python
+        - https://cs50.harvard.edu/x/2022/notes/6/#libraries 
+
+    Logging in Python
+        - https://rollbar.com/blog/logging-in-python/ 
+        - header: 'import logging'
+    URL Parsing
+        - library https://docs.python.org/3/library/urllib.parse.html 
+        - header: 'import urllib.parse'
+        - URL parsing means breaking up a URL string into components, each of which provide different information about the URL
+            - https://www.ibm.com/docs/en/cics-ts/5.2?topic=concepts-components-url 
+            - HTTP URLs are normally made up of 4 components:
+                - a scheme: (ex: HTTP) defines the protocol used to access the resource attached to the URL
+                - host: the name of the server who "hosts" the resource (ex: Google.com)
+                - path: the specific resource on the host server the URL is accessing
+                - query string: (comes after path) usually includes a string pair of 'name' and 'value', separated by an ampersand '&'
+    Regular Expressions:
+        - "REs"
+        - header: 'import re'
+        - https://docs.python.org/3/howto/regex.html 
+        - 
+    Definitions/Functions:
+        - https://www.programiz.com/python-programming/function
+    Pandas:
+        - Kaggle
+           https://www.kaggle.com/learn/pandas
+            - creating/reading/writing
+                https://www.kaggle.com/code/residentmario/creating-reading-and-writing
+    CSVs:
+        - https://docs.python.org/3/library/csv.html
+        - creating a CSV
+            https://www.computerhope.com/issues/ch001356.htm 
+        - putting data into CSV
+            https://www.educba.com/python-import-csv/
