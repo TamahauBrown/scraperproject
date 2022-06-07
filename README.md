@@ -10,68 +10,6 @@ Rose Pineau - Python developer
 
 # PROJECT SCRAPER
 
-# Contents
-
-[Introduction: 3](#_Toc103570630)
-
-[Purpose: 3](#_Toc103570631)
-
-[Main Goal: 3](#_Toc103570632)
-
-[Python&#39;s Job: 3](#_Toc103570633)
-
-[Rust&#39;s Job: 3](#_Toc103570634)
-
-[Languages: 3](#_Toc103570635)
-
-[Intended Audience: 3](#_Toc103570636)
-
-[Permissions: 3](#_Toc103570637)
-
-[Everyone: 4](#_Toc103570638)
-
-[File naming conventions: 4](#_Toc103570639)
-
-[Document Conventions: 4](#_Toc103570640)
-
-[System Features (Functional Requirements): 4](#_Toc103570641)
-
-[SF1: Information Scraper 4](#_Toc103570642)
-
-[Example Scenario: 4](#_Toc103570643)
-
-[Case 1: An scraper with an API key is chosen 4](#_Toc103570644)
-
-[Case 2: Information from gathering HTML 5](#_Toc103570645)
-
-[Example scenario: 5](#_Toc103570646)
-
-[SF2: Graphing the information 6](#_Toc103570647)
-
-[SF3: Amalgamating Large Data to produce high quality graphs 6](#_Toc103570648)
-
-[Example of how this would be done: 6](#_Toc103570649)
-
-[LIMITATION: 6](#_Toc103570650)
-
-[Techniques that will be relevant: 6](#_Toc103570651)
-
-[Non-Functional Requirements: 7](#_Toc103570652)
-
-[Safety: 7](#_Toc103570653)
-
-[Security: 7](#_Toc103570654)
-
-[Performance: 7](#_Toc103570655)
-
-[Design: 7](#_Toc103570656)
-
-[Constraints: 7](#_Toc103570657)
-
-[System Architecture: 8](#_Toc103570658)
-
-[Paper Prototype: 8](#_Toc103570659)
-
 # Introduction:
 
 ## Purpose:

@@ -35,4 +35,16 @@ PYTHON
         - header: 'import re'
         - https://docs.python.org/3/howto/regex.html 
         - 
-            
+    Definitions/Functions:
+        - https://www.programiz.com/python-programming/function
+    Pandas:
+        - Kaggle
+           https://www.kaggle.com/learn/pandas
+            - creating/reading/writing
+                https://www.kaggle.com/code/residentmario/creating-reading-and-writing
+    CSVs:
+        - https://docs.python.org/3/library/csv.html
+        - creating a CSV
+            https://www.computerhope.com/issues/ch001356.htm 
+        - putting data into CSV
+            https://www.educba.com/python-import-csv/
