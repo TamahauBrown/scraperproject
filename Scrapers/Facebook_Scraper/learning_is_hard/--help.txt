@@ -42,6 +42,9 @@ PYTHON
            https://www.kaggle.com/learn/pandas
             - creating/reading/writing
                 https://www.kaggle.com/code/residentmario/creating-reading-and-writing
+        - Dataframes
+            - Different ways to make dataframes:
+                https://towardsdatascience.com/15-ways-to-create-a-pandas-dataframe-754ecc082c17 
     CSVs:
         - https://docs.python.org/3/library/csv.html
         - creating a CSV
