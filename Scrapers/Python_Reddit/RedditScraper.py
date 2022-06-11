@@ -55,7 +55,6 @@ def top_posts(subreddit):
         # Saving the data in a pandas dataframe
         top_posts = pd.DataFrame(posts_dict)
         #top_posts
-
         top_posts.to_csv("Top Posts.csv", index=True)
 
 def post_scraper(reddit_read_only):
