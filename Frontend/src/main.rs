@@ -1,16 +1,83 @@
-#![warn(clippy::all, rust_2018_idioms)]
-#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] // hide console window on Windows in release
+use iced::{button, Alignment, Button, Column, Element, Sandbox, Settings, Text, Row, Length, Space, Size};
 
-// When compiling natively:
-#[cfg(not(target_arch = "wasm32"))]
-fn main() {
-    // Log to stdout (if you run with `RUST_LOG=debug`).
-    tracing_subscriber::fmt::init();
+pub fn main() -> iced::Result {
+    FrontendState::run(Settings::default())
+}
 
-    let native_options = eframe::NativeOptions::default();
-    eframe::run_native(
-        "eframe template",
-        native_options,
-        Box::new(|cc| Box::new(scraper_project_backend::TemplateApp::new(cc))),
-    );
+#[derive(Default)]
+struct FrontendState {
+    value: i32,
+
+    // Navigation buttons
+    home_button: button::State,
+    facebook_button: button::State,
+    reddit_button: button::State,
+    twitter_button: button::State,
+}
+
+#[derive(Debug, Clone, Copy)]
+enum Message {
+    HomePressed,
+    FacebookPressed,
+    RedditPressed,
+    TwitterPressed,
+}
+
+impl Sandbox for FrontendState {
+    type Message = Message;
+
+    fn new() -> Self {
+        Self::default()
+    }
+
+    fn title(&self) -> String {
+        String::from("Severus Scrape")
+    }
+
+    fn update(&mut self, message: Message) {
+        match message {
+            Message::HomePressed => {
+
+            }
+            Message::FacebookPressed => {
+
+            }
+            _ => {}
+        }
+    }
+
+    fn view(&mut self) -> Element<Message> {
+        let spacing = 10;
+
+        Column::new()
+            .padding(spacing)
+            .align_items(Alignment::Center)
+            .push(Row::new()
+                .height(Length::Fill)
+            )
+            .push(Row::new()
+                .height(Length::Units(100))
+                .align_items(Alignment::Center)
+                .push(
+                    // Bottom nav panel
+                    Button::new(&mut self.home_button, Text::new("HOME"))
+                        .on_press(Message::FacebookPressed)
+                )
+                .push(
+                    // Bottom nav panel
+                    Button::new(&mut self.facebook_button, Text::new("-"))
+                        .on_press(Message::FacebookPressed)
+                )
+                .push(
+                    // Bottom nav panel
+                    Button::new(&mut self.reddit_button, Text::new("-"))
+                        .on_press(Message::FacebookPressed)
+                )
+                .push(
+                    // Bottom nav panel
+                    Button::new(&mut self.twitter_button, Text::new("-"))
+                        .on_press(Message::FacebookPressed)
+                )
+            ).into()
+    }
 }
