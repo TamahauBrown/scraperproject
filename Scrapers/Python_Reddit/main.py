@@ -1,5 +1,5 @@
 #From <file> import <method>
-from RedditScraper import Subreddit_Scraper, Subreddit, Clear_File, Post_Scraper, Top_Posts
+from RedditScraper import subreddit_scraper, subreddit, clear_file, post_scraper, top_posts
 import praw
 
 #Credentials
@@ -8,6 +8,6 @@ import praw
 #                               user_agent="")                         # your user agent
 
 if __name__ == '__main__':
-    subreddit = Subreddit('geek', reddit_read_only)
+    subreddit = subreddit('geek', reddit_read_only)
     #Subreddit_Scraper(subreddit)
-    Top_Posts(subreddit)
+    top_posts(subreddit)
