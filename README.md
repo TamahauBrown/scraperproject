@@ -1,7 +1,5 @@
 Tamahau Brown (https://github.com/TamahauBrown) - Tech lead
 
-Terence Qu - Rust developer and architecture
-
 Rex Pan - Rust developer
 
 Rose Pineau - Python developer
